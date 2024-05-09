@@ -60,7 +60,7 @@ class SynthDashboard(wx.Frame):
 
     def scan_for_devices(self):
         self.update_status("Scanning for devices...")
-        devices = self.bluetooth_manager.scan_for_devices()
+        devices = self.bluetooth_manager.discover_devices()
         wx.CallAfter(self.device_list.Set, devices)
         self.update_status("Scanning complete.")
 
