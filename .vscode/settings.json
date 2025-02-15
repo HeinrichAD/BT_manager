@@ -1,0 +1,32 @@
+{
+    "cSpell.allowCompoundWords": true,
+    "cSpell.language": "en,scientific-terms-us",
+    "cSpell.words": [
+        "bluetoothctl",
+        "bluez",
+        "mypy",
+        "venv"
+    ],
+    "shellcheck.customArgs": [
+        "--external-sources",
+        "--shell", "bash"
+    ],
+    "files.associations": {
+        ".markdownlint.json": "jsonc",
+        "pyproject.toml": "ini"
+    },
+    "files.watcherExclude": {
+        "**/.git/objects/**": true,
+        "**/.git/subtree-cache/**": true,
+        "**/.mypy_cache/*/**": true,
+        "**/.venv/*/**": true
+    },
+    "files.exclude": {
+        ".pytest_cache": true,
+        ".tox": true,
+        "*.egg-info": true,
+        "**/__pycache__": true,
+        "**/.mypy_cache": true
+    },
+    "mypy.runUsingActiveInterpreter": true
+}
